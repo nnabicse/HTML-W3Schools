@@ -13,7 +13,14 @@ Use the CSS float property to let the image float to the left or to the right --
     <title>Images</title>
 </head>
 <body>
-    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="Sunset" width: "500px" height: "600px" float:"left">
-    <img src="https://blog.hubspot.com/hubfs/Smiling%20Leo%20Perfect%20GIF.gif" alt="De Caprio" width="500px" height="500px" float:"left">
+    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="Sunset" width: "500px" height: "600px" float:"left" usemap="#workmap">
+    <img src="https://blog.hubspot.com/hubfs/Smiling%20Leo%20Perfect%20GIF.gif" alt="De Caprio" width="500px" height="500px" float:"left" usemap="#caprio">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" href="google.com" alt="sun">
+    </map>
+    <map name="caprio">
+        <area shape="rect" coords="34,44,270,350" href="google.com" alt="DECAP">
+    </map>
 </body>
 </html>
